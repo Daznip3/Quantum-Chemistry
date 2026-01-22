@@ -17,7 +17,7 @@ def extract_data(file_id: str) -> pd.DataFrame:
 
     df = pd.read_csv(
         StringIO(response.text),
-        encoding="cp1251"   # 👈 ВАЖНО
+        encoding="cp1251"
     )
 
     print(f"✔ Extracted {len(df)} rows")
